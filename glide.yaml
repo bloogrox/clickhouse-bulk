@@ -1,0 +1,13 @@
+package: clickhouse-bulk
+import:
+- package: github.com/labstack/echo
+  version: ^3.3.5
+- package: github.com/nikepan/go-datastructures
+  version: ^1.0.32
+  subpackages:
+  - queue
+testImport:
+- package: github.com/stretchr/testify
+  version: ^1.2.1
+  subpackages:
+  - assert
