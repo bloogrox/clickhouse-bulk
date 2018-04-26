@@ -1,6 +1,8 @@
 hash: ccf2238658148c3a1f011163fada6ee89469c189cda96cbb3f77469bf57d6315
-updated: 2018-04-24T20:49:48.154913644+03:00
+updated: 2018-04-26T17:04:21.2531743+03:00
 imports:
+- name: github.com/caarlos0/env
+  version: 9b2b3076ca0cbc3cf9587a990befcd1306a8ae34
 - name: github.com/labstack/echo
   version: 6d227dfea4d2e52cb76856120b3c17f758139b4e
 - name: github.com/labstack/gommon
