@@ -18,7 +18,7 @@ var date = "unknown"
 var cnf config
 
 type config struct {
-	Port                  int      `env:"PORT" envDefault:"8124"`
+	Port                  int      `env:"PORT" envDefault:"80"`
 	ClickhouseServers     []string `env:"CLICKHOUSE_SERVERS" envSeparator:","`
 	ClickhouseDownTimeout int      `env:"CLICKHOUSE_DOWN_TIMEOUT" envDefault:"300"`
 	FlushCount            int      `env:"FLUSH_COUNT" envDefault:"10000"`
