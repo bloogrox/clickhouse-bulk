@@ -1,0 +1,22 @@
+version: '2'
+
+services:
+
+  server:
+    image: 'yandex/clickhouse-server'
+
+  web:
+    build: .
+    image: 'clickhouse-bulk'
+    ports:
+      - 8124:80
+    depends_on:
+      - server
+    environment:
+      - "CLICKHOUSE_SERVERS=http://server:8123"
+
+  curl-test:
+    image: tutum/curl
+    command: curl -X POST http://web:80 -d "SELECT 1"
+    depends_on:
+      - web
